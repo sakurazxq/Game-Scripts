@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,4 +25,32 @@ public class SelectOnInput : MonoBehaviour
     {
         buttonSelected = false;
     }
+=======
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class SelectOnInput : MonoBehaviour
+{
+    public EventSystem eventSystem;
+    public GameObject selectedObject;
+
+    private bool buttonSelected;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
+        {
+            eventSystem.SetSelectedGameObject(selectedObject);
+            buttonSelected = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        buttonSelected = false;
+    }
+>>>>>>> 1d8fe8c08b28c74b2f92cf002b742f23a92ee478
 }

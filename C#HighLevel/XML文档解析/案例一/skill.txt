@@ -1,0 +1,17 @@
+﻿<skills>
+  <skill>
+    <id>2</id>
+    <name lang = "cn">天下无双</name>
+    <damage>123</damage>
+  </skill>
+  <skill>
+    <id>3</id>
+    <name lang = "cn">不灭魔躯</name>
+    <damage>150</damage>
+  </skill>
+  <skill>
+    <id>4</id>
+    <name lang = "en">kill</name>
+    <damage>110</damage>
+  </skill>
+</skills>
